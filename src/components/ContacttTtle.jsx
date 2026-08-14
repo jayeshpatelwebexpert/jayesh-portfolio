@@ -19,12 +19,13 @@ function ContactTitle() {
               Let's build
             </a>
 
-            <a href="/portfolio">
+            <a 
+            href="/portfolio">
               Portfolio
             </a>
 
             <a
-              href="/assets/jayeshchandra-developer.pdf"
+              href={`${import.meta.env.BASE_URL}assets/jayeshchandra-developer.pdf`}
               target="_blank"
               rel="noopener noreferrer"
             >

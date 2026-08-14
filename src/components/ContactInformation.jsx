@@ -21,7 +21,7 @@ function ContactInformation() {
                       >
                         <div className="contact-information-icon">
                           <img
-                            src="{`${import.meta.env.BASE_URL}/images/email.png`}"
+                            src={`${import.meta.env.BASE_URL}assets/images/email.png`}
                             alt="Email"
                           />
                         </div>
@@ -38,7 +38,7 @@ function ContactInformation() {
                       >
                         <div className="contact-information-icon">
                           <img
-                            src="{`${import.meta.env.BASE_URL}/images/old-typical-phone.png`}"
+                            src={`${import.meta.env.BASE_URL}assets/images/old-typical-phone.png`}
                             alt="Phone"
                           />
                         </div>
@@ -57,7 +57,7 @@ function ContactInformation() {
                       >
                         <div className="contact-information-icon">
                           <img
-                            src="{`${import.meta.env.BASE_URL}/images/whatsapp.png`}"
+                            src={`${import.meta.env.BASE_URL}assets/images/whatsapp.png`}
                             alt="WhatsApp"
                           />
                         </div>
@@ -76,7 +76,7 @@ function ContactInformation() {
                       >
                         <div className="contact-information-icon">
                           <img
-                            src="{`${import.meta.env.BASE_URL}/images/instagram.png`}"
+                           src={`${import.meta.env.BASE_URL}assets/images/instagram.png`}
                             alt="Instagram"
                           />
                         </div>
@@ -94,7 +94,7 @@ function ContactInformation() {
                 <div className="contact-information-card">
                   <div className="contact-information-img">
                     <img
-                      src="/assets/images/contactus.png"
+                     src={`${import.meta.env.BASE_URL}assets/images/contactus.png`}
                       alt="Contact Us"
                     />
                   </div>
