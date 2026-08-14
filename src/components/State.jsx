@@ -1,62 +1,67 @@
-function State() { 
+const statsData = [
+  {
+    count: 20,
+    suffix: "+",
+    title: "Projects",
+    subtitle: "Delivered",
+  },
+  {
+    count: 6,
+    suffix: "+",
+    title: "Industries",
+    subtitle: "Served",
+  },
+  {
+    count: 8,
+    suffix: "+",
+    title: "Years of",
+    subtitle: "Experience",
+  },
+  {
+    count: 8,
+    suffix: "%",
+    title: "Responsive",
+    subtitle: "Websites",
+  },
+];
+
+function State() {
   return (
     <section className="state-section">
       <div className="container">
         <div className="row">
           <div className="col-md-12 col-xl-12 col-lg-12">
+
             <div className="state-box">
               <div className="row">
 
-                <div className="col-md-3 col-xl-3 col-lg-3">
-                  <div className="state-card">
-                    <h2 className="counter" data-count="20" data-suffix="+">
-                      0
-                    </h2>
-                    <span>
-                      Projects
-                      <span>Delivered</span>
-                    </span>
-                  </div>
-                </div>
+                {statsData.map((stat, index) => (
+                  <div
+                    className="col-md-3 col-xl-3 col-lg-3"
+                    key={index}
+                  >
+                    <div className="state-card">
 
-                <div className="col-md-3 col-xl-3 col-lg-3">
-                  <div className="state-card">
-                    <h2 className="counter" data-count="6" data-suffix="+">
-                      0
-                    </h2>
-                    <span>
-                      Industries
-                      <span>Served</span>
-                    </span>
-                  </div>
-                </div>
+                      <h2
+                        className="counter"
+                        data-count={stat.count}
+                        data-suffix={stat.suffix}
+                      >
+                        0
+                      </h2>
 
-                <div className="col-md-3 col-xl-3 col-lg-3">
-                  <div className="state-card">
-                    <h2 className="counter" data-count="8" data-suffix="+">
-                      0
-                    </h2>
-                    <span>
-                      Years of
-                      <span>Experience</span>
-                    </span>
-                  </div>
-                </div>
+                      <span>
+                        {stat.title}
+                        <span>{stat.subtitle}</span>
+                      </span>
 
-                <div className="col-md-3 col-xl-3 col-lg-3">
-                  <div className="state-card">
-                    <h2 className="counter" data-count="8" data-suffix="%">
-                      0
-                    </h2>
-                    <span>
-                      Responsive
-                      <span>Websites</span>
-                    </span>
+                    </div>
                   </div>
-                </div>
+                ))}
 
               </div>
             </div>
+
           </div>
         </div>
       </div>

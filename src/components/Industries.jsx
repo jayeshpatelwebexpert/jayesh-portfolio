@@ -1,9 +1,42 @@
+const industriesData = [
+  {
+    name: "Transportation",
+    image: "transportation.png",
+    alt: "Transportation",
+  },
+  {
+    name: "Finance",
+    image: "finance.png",
+    alt: "Finance",
+  },
+  {
+    name: "Health Care",
+    image: "healthcare.png",
+    alt: "Health Care",
+  },
+  {
+    name: "Interior Design",
+    image: "interior-design.png",
+    alt: "Interior Design",
+  },
+  {
+    name: "Fitness",
+    image: "fitness.png",
+    alt: "Fitness",
+  },
+  {
+    name: "Logistics",
+    image: "logistics.png",
+    alt: "Logistics",
+  },
+];
+
 function Industries() {
   return (
     <section className="industries-section">
       <div className="container">
 
-        {/* Section Title */} 
+        {/* Section Title */}
         <div className="row justify-content-center">
           <div className="col-xl-10 col-lg-10 col-md-10">
             <div className="section-title">
@@ -16,79 +49,28 @@ function Industries() {
         {/* Industries */}
         <div className="row justify-content-center">
 
-          <div className="col-xl-2 col-lg-2 col-md-2">
-            <div className="industries-card">
-              <div className="industries-img">
-                <img
-                  src="/assets/images/transportation.png"
-                  alt="Transportation"
-                />
-              </div>
-              <h3>Transportation</h3>
-            </div>
-          </div>
+          {industriesData.map((industry, index) => (
+            <div
+              className="col-xl-2 col-lg-2 col-md-2"
+              key={index}
+            >
+              <div className="industries-card">
 
-          <div className="col-xl-2 col-lg-2 col-md-2">
-            <div className="industries-card">
-              <div className="industries-img">
-                <img
-                  src="/assets/images/finance.png"
-                  alt="Finance"
-                />
-              </div>
-              <h3>Finance</h3>
-            </div>
-          </div>
+                <div className="industries-img">
+                  <img
+                    src={`${import.meta.env.BASE_URL}assets/images/${industry.image}`}
+                    alt={industry.alt}
+                  />
+                </div>
 
-          <div className="col-xl-2 col-lg-2 col-md-2">
-            <div className="industries-card">
-              <div className="industries-img">
-                <img
-                  src="/assets/images/healthcare.png"
-                  alt="Health Care"
-                />
-              </div>
-              <h3>Health Care</h3>
-            </div>
-          </div>
+                <h3>{industry.name}</h3>
 
-          <div className="col-xl-2 col-lg-2 col-md-2">
-            <div className="industries-card">
-              <div className="industries-img">
-                <img
-                  src="/assets/images/interior-design.png"
-                  alt="Interior Design"
-                />
               </div>
-              <h3>Interior Design</h3>
             </div>
-          </div>
-
-          <div className="col-xl-2 col-lg-2 col-md-2">
-            <div className="industries-card">
-              <div className="industries-img">
-                <img
-                  src="/assets/images/fitness.png"
-                  alt="Fitness"
-                />
-              </div>
-              <h3>Fitness</h3>
-            </div>
-          </div>
-
-          <div className="col-xl-2 col-lg-2 col-md-2">
-            <div className="industries-card">
-              <div className="industries-img">
-                <img
-                  src="/assets/images/logistics.png"
-                  alt="Logistics"
-                />
-              </div>
-              <h3>Logistics</h3>
-            </div>
-          </div>
+          ))}
 
         </div>
+
       </div>
     </section>
   );

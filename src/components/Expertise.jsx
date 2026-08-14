@@ -1,3 +1,71 @@
+const expertise = [
+  {
+    name: "HTML5",
+    image: "html5.svg",
+    alt: "HTML5",
+  },
+  {
+    name: "CSS3",
+    image: "css3.svg",
+    alt: "CSS3",
+  },
+  {
+    name: "Bootstrap",
+    image: "bootstrap5.svg",
+    alt: "Bootstrap",
+  },
+  {
+    name: "JavaScript",
+    image: "js.svg",
+    alt: "JavaScript",
+  },
+  {
+    name: "jQuery",
+    image: "jquery.svg",
+    alt: "jQuery",
+  },
+  {
+    name: "PHP",
+    image: "php.svg",
+    alt: "PHP",
+  },
+  {
+    name: "WordPress",
+    image: "wordpress.svg",
+    alt: "WordPress",
+  },
+  {
+    name: "WooCommerce",
+    image: "woocommerce.svg",
+    alt: "WooCommerce",
+  },
+  {
+    name: "Shopify",
+    image: "shopify-c.png",
+    alt: "Shopify",
+  },
+  {
+    name: "Figma",
+    image: "figma.svg",
+    alt: "Figma",
+  },
+  {
+    name: "Adobe Photoshop",
+    image: "photoshop.svg",
+    alt: "Adobe Photoshop",
+  },
+  {
+    name: "Adobe Illustrator",
+    image: "adobeillustrator.svg",
+    alt: "Adobe Illustrator",
+  },
+  {
+    name: "Adobe XD",
+    image: "xd.svg",
+    alt: "Adobe XD",
+  },
+];
+
 function Expertise() {
   return (
     <section className="expertise-section">
@@ -28,118 +96,15 @@ function Expertise() {
           <div className="col-xl-8 col-lg-8 col-md-8">
             <div className="expertise-list">
 
-              {/* Row 1 */}
-              <div className="expertise-line-1">
-                <a href="#">
+              {expertise.map((skill, index) => (
+                <a href="#" key={index}>
                   <img
-                    src="/assets/images/html5.svg"
-                    alt="HTML5"
+                    src={`${import.meta.env.BASE_URL}assets/images/${skill.image}`}
+                    alt={skill.alt}
                   />
-                  HTML5
+                  {skill.name}
                 </a>
-
-                <a href="#">
-                  <img
-                    src="/assets/images/css3.svg"
-                    alt="CSS3"
-                  />
-                  CSS3
-                </a>
-
-                <a href="#">
-                  <img
-                    src="/assets/images/bootstrap5.svg"
-                    alt="Bootstrap"
-                  />
-                  Bootstrap
-                </a>
-
-                <a href="#">
-                  <img
-                    src="/assets/images/js.svg"
-                    alt="JavaScript"
-                  />
-                  JavaScript
-                </a>
-
-                <a href="#">
-                  <img
-                    src="/assets/images/jquery.svg"
-                    alt="jQuery"
-                  />
-                  jQuery
-                </a>
-              </div>
-
-              {/* Row 2 */}
-              <div className="expertise-line-1">
-                <a href="#">
-                  <img
-                    src="/assets/images/php.svg"
-                    alt="PHP"
-                  />
-                  PHP
-                </a>
-
-                <a href="#">
-                  <img
-                    src="/assets/images/wordpress.svg"
-                    alt="WordPress"
-                  />
-                  WordPress
-                </a>
-
-                <a href="#">
-                  <img
-                    src="/assets/images/woocommerce.svg"
-                    alt="WooCommerce"
-                  />
-                  WooCommerce
-                </a>
-
-                <a href="#">
-                  <img
-                    src="/assets/images/shopify-c.png"
-                    alt="Shopify"
-                  />
-                  Shopify
-                </a>
-              </div>
-
-              {/* Row 3 */}  
-              <div className="expertise-line-1">
-                <a href="#"> 
-                  <img
-                    src="/assets/images/figma.svg"
-                    alt="Figma"
-                  />
-                  Figma
-                </a>
-
-                <a href="#">
-                  <img
-                    src="/assets/images/photoshop.svg"
-                    alt="Adobe Photoshop"
-                  />
-                  Adobe Photoshop
-                </a>
-
-                <a href="#">
-                  <img
-                    src="/assets/images/adobeillustrator.svg"
-                    alt="Adobe Illustrator"
-                  />
-                  Adobe Illustrator
-                </a>
-
-                <a href="#">
-                  <img
-                    src="/assets/images/xd.svg"
-                    alt="Adobe XD"
-                  />
-                  Adobe XD
-                </a>
-              </div>
+              ))}
 
             </div>
           </div>

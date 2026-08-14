@@ -1,9 +1,36 @@
+const featuredProjects = [
+  {
+    title: "Limo Bike",
+    image: "f1.png",
+    alt: "Limo Bike",
+    link: "/limo-bike",
+  },
+  {
+    title: "Brandler Galleries",
+    image: "f6.png",
+    alt: "Brandler Galleries",
+    link: "/brandler-galleries",
+  },
+  {
+    title: "Dyslexia Supports",
+    image: "f5.png",
+    alt: "Dyslexia Supports",
+    link: "/dyslexia-support",
+  },
+  {
+    title: "Jacobs Futura",
+    image: "f4.png",
+    alt: "Jacobs Futura",
+    link: "/jacobs-futura",
+  },
+];
+
 function FeaturedWork() {
   return (
     <section className="featured-section">
       <div className="container">
 
-        {/* Section Title */} 
+        {/* Section Title */}
         <div className="row justify-content-center">
           <div className="col-xl-10 col-lg-10 col-md-10">
             <div className="section-title">
@@ -27,73 +54,29 @@ function FeaturedWork() {
 
         {/* Featured Projects */}
         <div className="row justify-content-center">
+          {featuredProjects.map((project, index) => (
+            <div
+              className="col-xl-6 col-lg-6 col-md-6"
+              key={index}
+            >
+              <div className="featured-card">
 
-          {/* Limo Bike */}
-          <div className="col-xl-6 col-lg-6 col-md-6">
-            <div className="featured-card">
-              <div className="featured-img">
-                <img
-                  src="/assets/images/f1.png"
-                  alt="Limo Bike"
-                />
-              </div>
+                <div className="featured-img">
+                  <img
+                    src={`${import.meta.env.BASE_URL}assets/images/${project.image}`}
+                    alt={project.alt}
+                  />
+                </div>
 
-              <div className="featured-link">
-                <a href="/limo-bike">Limo Bike</a>
-              </div>
-            </div>
-          </div>
+                <div className="featured-link">
+                  <a href={project.link}>
+                    {project.title}
+                  </a>
+                </div>
 
-          {/* Brandler Galleries */}
-          <div className="col-xl-6 col-lg-6 col-md-6">
-            <div className="featured-card">
-              <div className="featured-img">
-                <img
-                  src="/assets/images/f6.png"
-                  alt="Brandler Galleries"
-                />
-              </div>
-
-              <div className="featured-link">
-                <a href="/brandler-galleries">Brandler Galleries</a>
               </div>
             </div>
-          </div>
-
-          {/* Dyslexia Supports */}
-          <div className="col-xl-6 col-lg-6 col-md-6">
-            <div className="featured-card">
-              <div className="featured-img">
-                <img
-                  src="/assets/images/f5.png"
-                  alt="Dyslexia Supports"
-                />
-              </div>
-
-              <div className="featured-link">
-                <a href="/dyslexia-support">
-                  Dyslexia Supports
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Jacobs Futura */}
-          <div className="col-xl-6 col-lg-6 col-md-6">
-            <div className="featured-card">
-              <div className="featured-img">
-                <img
-                  src="/assets/images/f4.png"
-                  alt="Jacobs Futura"
-                />
-              </div>
-
-              <div className="featured-link">
-                <a href="/jacobs-futura">Jacobs Futura</a>
-              </div>
-            </div>
-          </div>
-
+          ))}
         </div>
 
         {/* View Featured Work */}
@@ -109,6 +92,7 @@ function FeaturedWork() {
         <div className="row justify-content-center">
           <div className="col-xl-10 col-lg-10 col-md-10">
             <div className="featured-text">
+
               <p>
                 Each project was designed and developed with a strong focus on
                 user experience, responsive design, performance optimization,
@@ -122,6 +106,7 @@ function FeaturedWork() {
                 and intellectual property rights remain with their respective
                 owners.
               </span>
+
             </div>
           </div>
         </div>
