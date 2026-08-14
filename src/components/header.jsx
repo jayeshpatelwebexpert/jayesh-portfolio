@@ -14,7 +14,7 @@ function Header() {
       <div className="mobile-menu">
         <div className="mobile-menu-header">
           <a href="/">
-            <img src="assets/images/logo.svg" alt="Jayesh Web Expert" />
+            <img src={`${import.meta.env.BASE_URL}assets/images/logo.svg`} alt="Jayesh Web Expert" />
           </a>
 
           <span>X</span>
@@ -52,7 +52,7 @@ function Header() {
                 <div className="logo">
                   <a href="/">
                     <img
-                      src="/assets/images/logo.svg"
+                      src={`${import.meta.env.BASE_URL}assets/images/logo.svg`}
                       alt="Jayesh Web Expert"
                     />
                   </a>
@@ -80,7 +80,7 @@ function Header() {
                 <div className="cta">
                   <span className="mobile-icon">
                     <img
-                      src="/assets/images/menu.png"
+                      src={`${import.meta.env.BASE_URL}assets/images/menu.png`}
                       alt="Open menu"
                     />
                   </span>

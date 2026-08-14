@@ -8,24 +8,13 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/jayesh-portfolio">
       <Routes>
-
-        {/* Home */}
         <Route path="/" element={<Home />} />
-
-        {/* About Us */}
         <Route path="/about" element={<About />} />
-
-        {/* Services */}
         <Route path="/services" element={<Services />} />
-
-        {/* Portfolio */}
         <Route path="/portfolio" element={<Portfolio />} />
-
-        {/* Contact */}
         <Route path="/contact" element={<Contact />} />
-
       </Routes>
     </BrowserRouter>
   );
