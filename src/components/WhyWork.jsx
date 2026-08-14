@@ -1,4 +1,4 @@
-function WhyWork() { 
+function WhyWork() {
   return (
     <section className="services-section">
       <div className="container">

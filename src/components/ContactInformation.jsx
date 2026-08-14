@@ -21,7 +21,7 @@ function ContactInformation() {
                       >
                         <div className="contact-information-icon">
                           <img
-                            src="/assets/images/email.png"
+                            src="{`${import.meta.env.BASE_URL}/images/email.png`}"
                             alt="Email"
                           />
                         </div>
@@ -38,7 +38,7 @@ function ContactInformation() {
                       >
                         <div className="contact-information-icon">
                           <img
-                            src="/assets/images/old-typical-phone.png"
+                            src="{`${import.meta.env.BASE_URL}/images/old-typical-phone.png`}"
                             alt="Phone"
                           />
                         </div>
@@ -57,7 +57,7 @@ function ContactInformation() {
                       >
                         <div className="contact-information-icon">
                           <img
-                            src="/assets/images/whatsapp.png"
+                            src="{`${import.meta.env.BASE_URL}/images/whatsapp.png`}"
                             alt="WhatsApp"
                           />
                         </div>
@@ -76,7 +76,7 @@ function ContactInformation() {
                       >
                         <div className="contact-information-icon">
                           <img
-                            src="/assets/images/instagram.png"
+                            src="{`${import.meta.env.BASE_URL}/images/instagram.png`}"
                             alt="Instagram"
                           />
                         </div>
