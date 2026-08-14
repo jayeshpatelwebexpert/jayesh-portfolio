@@ -95,16 +95,17 @@ function Expertise() {
         <div className="row justify-content-center">
           <div className="col-xl-8 col-lg-8 col-md-8">
             <div className="expertise-list">
-
-              {expertise.map((skill, index) => (
-                <a href="#" key={index}>
-                  <img
-                    src={`${import.meta.env.BASE_URL}assets/images/${skill.image}`}
-                    alt={skill.alt}
-                  />
-                  {skill.name}
-                </a>
-              ))}
+              <div className="expertise-line-1">
+                {expertise.map((skill, index) => (
+                  <a href="#" key={index}>
+                    <img
+                      src={`${import.meta.env.BASE_URL}assets/images/${skill.image}`}
+                      alt={skill.alt}
+                    />
+                    {skill.name}
+                  </a>
+                ))}
+             </div>
 
             </div>
           </div>
