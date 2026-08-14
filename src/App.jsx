@@ -1,0 +1,34 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+
+        {/* Home */}
+        <Route path="/" element={<Home />} />
+
+        {/* About Us */}
+        <Route path="/about" element={<About />} />
+
+        {/* Services */}
+        <Route path="/services" element={<Services />} />
+
+        {/* Portfolio */}
+        <Route path="/portfolio" element={<Portfolio />} />
+
+        {/* Contact */}
+        <Route path="/contact" element={<Contact />} />
+
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
