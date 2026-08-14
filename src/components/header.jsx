@@ -85,7 +85,6 @@ function Header() {
 
                     <li>
                       <Link to="/services">Services</Link>
-                      <Link to="/services">Services TEST</Link>
                     </li>
 
                     <li>
