@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
+      {/* Custom Cursor */}
       <div className="cursor-example"></div>
 
+      {/* Background Lines */}
       <div className="line-box">
         <span></span>
         <span></span>
@@ -23,7 +25,7 @@ function Header() {
             />
           </Link>
 
-          <span>X</span>
+          <span className="mobile-menu-close">X</span>
         </div>
 
         <div className="mobile-menu-body">
