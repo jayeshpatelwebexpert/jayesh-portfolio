@@ -1,7 +1,7 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import ContactTitle from "../components/ContactTitle";
-import ContactInformation from "../components/ContactInformation";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import ContactTitle from "../components/contacttitle";
+import ContactInformation from "../components/contactInformation";
 import CTA from "../components/cta";
 
 function Contact() {

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function AboutSection() {
+function aboutsection() {
   return (
     <section className="about-section">
       <div className="container">
@@ -45,4 +45,4 @@ function AboutSection() {
   );
 }
 
-export default AboutSection;
+export default aboutsection;

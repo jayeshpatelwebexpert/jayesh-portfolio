@@ -1,10 +1,10 @@
-import Header from "../components/Header";
-import ServiceHero from "../components/ServiceHero";
+import Header from "../components/header";
+import ServiceHero from "../components/servicehero";
 import CTA from "../components/cta";
-import ServicesSection from "../components/ServicesSection";
-import Process from "../components/Process";
-import State from "../components/State";
-import Footer from "../components/Footer";
+import ServicesSection from "../components/servicessection";
+import Process from "../components/process";
+import State from "../components/state";
+import Footer from "../components/footer";
 
 function Services() {
   return (
