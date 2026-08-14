@@ -14,7 +14,7 @@ function Services() {
       <ServicesSection />
       <Process />
       <State />
-      <CTA />
+      <CTA /> 
       <Footer />
     </>
   );
