@@ -1,4 +1,4 @@
-import Header from "../components/header";
+import Header from "../components/Header";
 import PortfolioHero from "../components/portfoliohero";
 import PortfolioList from "../components/portfoliolist";
 import Process from "../components/process";

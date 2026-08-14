@@ -1,4 +1,4 @@
-import Header from "../components/header";
+import Header from "../components/Header";
 import ServiceHero from "../components/servicehero";
 import CTA from "../components/cta";
 import ServicesSection from "../components/servicessection";
