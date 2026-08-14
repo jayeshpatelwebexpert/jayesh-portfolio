@@ -1,10 +1,10 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/home";
-import About from "./pages/about";
-import Services from "./pages/services";
-import Portfolio from "./pages/portfolio";
-import Contact from "./pages/contact";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
