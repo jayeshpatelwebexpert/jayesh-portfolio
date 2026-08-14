@@ -5,7 +5,7 @@ import ContactInformation from "../components/ContactInformation";
 import CTA from "../components/CTA";
 
 function Contact() {
-  return (
+  return ( 
     <>
       <Header />
       <ContactTitle />

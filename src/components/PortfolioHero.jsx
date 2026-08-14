@@ -7,7 +7,7 @@ function PortfolioHero() {
         <div className="hero-card">
           <div className="hero-box">
 
-            <h1>Featured Projects</h1>
+            <h1>Featured Projects</h1> 
 
             <p>
               Explore a collection of projects that showcase my expertise in

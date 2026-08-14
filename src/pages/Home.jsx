@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import State from "../components/State";
 import AboutSection from "../components/AboutSection";
-import Industries from "../components/industries";
+import Industries from "../components/Industries";
 import ServicesSection from "../components/ServicesSection";
 import Expertise from "../components/Expertise";
 import FeaturedWork from "../components/FeaturedWork";
@@ -14,7 +14,7 @@ import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 
 function Home() {
-  return (
+  return ( 
     <>
       <Header />
       <Hero />

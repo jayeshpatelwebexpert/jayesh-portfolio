@@ -5,7 +5,7 @@ import Process from "../components/Process";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 
-function Portfolio() {
+function Portfolio() { 
   return (
     <>
         <Header />

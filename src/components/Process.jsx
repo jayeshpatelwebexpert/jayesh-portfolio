@@ -1,4 +1,4 @@
-function Process() {
+function Process() { 
   const processSteps = [
     {
       number: "01",

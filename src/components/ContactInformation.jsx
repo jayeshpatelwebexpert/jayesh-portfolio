@@ -1,6 +1,6 @@
 function ContactInformation() {
   return (
-    <section className="contact-information">
+    <section className="contact-information"> 
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10">

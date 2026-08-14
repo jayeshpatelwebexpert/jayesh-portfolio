@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="footer-section">
-      <div className="container">
+      <div className="container"> 
         <div className="row justify-content-center">
           <div className="col-xl-10 col-lg-10 col-md-10">
             <div className="footer-card">

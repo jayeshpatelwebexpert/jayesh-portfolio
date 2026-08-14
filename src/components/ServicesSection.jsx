@@ -1,4 +1,4 @@
-function Services() {
+function Services() { 
   return (
     <section className="services-section">
       <div className="container">

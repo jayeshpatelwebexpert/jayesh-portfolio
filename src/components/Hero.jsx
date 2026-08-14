@@ -2,7 +2,7 @@ function Hero() {
   return (
     <>
 {/* Hero */}
-      <section className="hero-section">
+      <section className="hero-section"> 
         <div className="container">
           <div className="hero-card">
             <div className="hero-box">

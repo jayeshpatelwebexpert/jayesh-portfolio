@@ -1,4 +1,4 @@
-function State() {
+function State() { 
   return (
     <section className="state-section">
       <div className="container">

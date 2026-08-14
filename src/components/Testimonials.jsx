@@ -1,4 +1,4 @@
-function Testimonials() {
+function Testimonials() { 
   return (
     <section className="testimonial-section">
       <div className="container">

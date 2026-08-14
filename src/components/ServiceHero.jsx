@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+ 
 function ServiceHero() {
   return (
     <section className="hero-section">

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function PortfolioList() {
+function PortfolioList() { 
   const projects = [
     {
       title: "Limo Bike",

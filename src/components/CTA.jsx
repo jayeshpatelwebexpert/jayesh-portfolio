@@ -3,7 +3,7 @@ function Contact() {
     <section className="contact-section">
       <div className="container">
 
-        {/* Section Title */}
+        {/* Section Title */} 
         <div className="row justify-content-center">
           <div className="col-xl-10 col-lg-10 col-md-10">
             <div className="section-title">

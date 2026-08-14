@@ -1,7 +1,7 @@
 function ContactTitle() {
   return (
     <section className="hero-section">
-      <div className="container">
+      <div className="container"> 
         <div className="hero-card">
           <div className="hero-box">
 

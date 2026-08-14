@@ -106,9 +106,9 @@ function Expertise() {
                 </a>
               </div>
 
-              {/* Row 3 */}
+              {/* Row 3 */}  
               <div className="expertise-line-1">
-                <a href="#">
+                <a href="#"> 
                   <img
                     src="/assets/images/figma.svg"
                     alt="Figma"

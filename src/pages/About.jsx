@@ -3,9 +3,9 @@ import Footer from "../components/Footer";
 
 function About() {
   return (
-    <>
+    <> 
       <Header />
-      
+       
       <Footer />
     </>
   );

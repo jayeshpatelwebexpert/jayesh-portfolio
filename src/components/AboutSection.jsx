@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function aboutsection() {
+function aboutsection() { 
   return (
     <section className="about-section">
       <div className="container">
