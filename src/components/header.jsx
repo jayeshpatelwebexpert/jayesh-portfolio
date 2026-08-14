@@ -1,21 +1,27 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <>
-    <div class="cursor-example"></div>
+      <div className="cursor-example"></div>
 
-<div class="line-box">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
+      <div className="line-box">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       {/* Mobile Menu */}
       <div className="mobile-menu">
         <div className="mobile-menu-header">
-          <a href="/">
-            <img src={`${import.meta.env.BASE_URL}assets/images/logo.svg`} alt="Jayesh Web Expert" />
-          </a>
+          <Link to="/">
+            <img
+              src={`${import.meta.env.BASE_URL}assets/images/logo.svg`}
+              alt="Jayesh Web Expert"
+            />
+          </Link>
 
           <span>X</span>
         </div>
@@ -23,19 +29,24 @@ function Header() {
         <div className="mobile-menu-body">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
+
+            {/* About */}
             {/* <li>
-              <a href="/about">About</a>
+              <Link to="/about">About</Link>
             </li> */}
+
             <li>
-              <a href="/services">Services</a>
+              <Link to="/services">Services</Link>
             </li>
+
             <li>
-              <a href="/portfolio">Portfolio</a>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
+
             <li>
-              <a href="/contact">Contact Us</a>
+              <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -50,28 +61,32 @@ function Header() {
 
                 {/* Logo */}
                 <div className="logo">
-                  <a href="/">
+                  <Link to="/">
                     <img
                       src={`${import.meta.env.BASE_URL}assets/images/logo.svg`}
                       alt="Jayesh Web Expert"
                     />
-                  </a>
+                  </Link>
                 </div>
 
                 {/* Desktop Menu */}
                 <div className="menu">
                   <ul>
                     <li>
-                      <a href="/">Home</a>
+                      <Link to="/">Home</Link>
                     </li>
+
+                    {/* About */}
                     {/* <li>
-                      <a href="/about">About</a>
+                      <Link to="/about">About</Link>
                     </li> */}
+
                     <li>
-                      <a href="/services">Services</a>
+                      <Link to="/services">Services</Link>
                     </li>
+
                     <li>
-                      <a href="/portfolio">Portfolio</a>
+                      <Link to="/portfolio">Portfolio</Link>
                     </li>
                   </ul>
                 </div>
@@ -85,7 +100,7 @@ function Header() {
                     />
                   </span>
 
-                  <a href="/contact">Contact Us</a>
+                  <Link to="/contact">Contact Us</Link>
                 </div>
 
               </div>
