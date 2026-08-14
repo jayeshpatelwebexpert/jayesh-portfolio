@@ -26,7 +26,7 @@ function AboutSection() {
 
             <div className="about-img">
               <img
-                src="/assets/images/about.png"
+                src={`${import.meta.env.BASE_URL}assets/images/about.png`}
                 alt="About Jayesh Patel"
               />
             </div>
